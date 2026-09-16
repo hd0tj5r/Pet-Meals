@@ -1,0 +1,10 @@
+dotnet clean
+接著刪掉舊的 bin、obj：Remove-Item -Recurse -Force .\bin, .\obj
+dotnet restore
+dotnet build
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+先建立貓狗基本欄位
+匯入貓狗品種
+在建立搜尋機制

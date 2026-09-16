@@ -1,0 +1,12 @@
+# 忽略整個 obj 資料夾
+obj/
+
+# 忽略所有 .log 結尾的檔案
+*.log
+
+# 忽略特定的設定檔
+appsettings.json
+
+appsettings.json
+
+*.txt
