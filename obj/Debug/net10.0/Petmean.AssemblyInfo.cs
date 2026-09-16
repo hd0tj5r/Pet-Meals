@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Petmean")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2f55dda5b95ec5625e157b1b6904ad13fd1a485")]
 [assembly: System.Reflection.AssemblyProductAttribute("Petmean")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Petmean")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
