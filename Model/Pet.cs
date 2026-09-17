@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 // =========================
 // 寵物基本資料
 // =========================
@@ -48,4 +49,28 @@ public class Pet
 
 
     public ActivityLevelType ActivityLevel { get; set; }
+
+    [NotMapped]
+    public int CurrentAge
+    {
+        get
+        {
+            // AgeRecordedAt 沒有被正確設定
+            if (AgeRecordedAt == default)
+            {
+                return AgeAtRegistration;
+            }
+
+            var today = DateTime.Today;
+
+            int yearsPassed = today.Year - AgeRecordedAt.Year;
+
+            if (today < AgeRecordedAt.AddYears(yearsPassed))
+            {
+                yearsPassed--;
+            }
+
+            return AgeAtRegistration + yearsPassed;
+        }
+    }
 }
